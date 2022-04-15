@@ -62,6 +62,100 @@
     />
 
     <link rel="stylesheet" href="register.css" />
+    <style>
+      .big {
+        font-size: 16px;
+      }
+
+      /* Custom dropdown */
+      .custom-dropdown {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        width: 100%;
+      }
+
+      .custom-dropdown select {
+        color: #000;
+        font-size: inherit;
+        padding: 0.5em;
+        padding-right: 2.5em;
+        border: 0;
+        margin: 0;
+        border-radius: 3px;
+        text-indent: 0.01px;
+        text-overflow: "";
+        -webkit-appearance: button; /* hide default arrow in chrome OSX */
+      }
+
+      .custom-dropdown::before,
+      .custom-dropdown::after {
+        content: "";
+        position: absolute;
+        pointer-events: none;
+      }
+
+      .custom-dropdown::after {
+        /*  Custom dropdown arrow */
+        content: "\25BC";
+        height: 1em;
+        font-size: 16px;
+        line-height: 1;
+        right: 1.2em;
+        top: 50%;
+        margin-top: -0.5em;
+      }
+
+      .custom-dropdown::before {
+        /*  Custom dropdown arrow cover */
+        width: 2em;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        border-radius: 0 3px 3px 0;
+      }
+
+      .custom-dropdown select[disabled] {
+        color: rgba(0, 0, 0);
+      }
+
+      .custom-dropdown select[disabled]::after {
+        color: rgba(0, 0, 0);
+      }
+
+      .custom-dropdown::before {
+        background-color: rgba(0, 0, 0);
+      }
+
+      .custom-dropdown::after {
+        color: rgba(0, 0, 0);
+      }
+    </style>
+
+    <script>
+      var colors = [
+        "1abc9c",
+        "2c3e50",
+        "2980b9",
+        "7f8c8d",
+        "f1c40f",
+        "d35400",
+        "27ae60",
+      ];
+
+      colors.each(function (color) {
+        $$(".color-picker")[0].insert(
+          '<div class="square" style="background: #' + color + '"></div>'
+        );
+      });
+
+      $$(".color-picker")[0].on("click", ".square", function (event, square) {
+        background = square.getStyle("background");
+        $$(".custom-dropdown select").each(function (dropdown) {
+          dropdown.setStyle({ background: background });
+        });
+      });
+    </script>
   </head>
   <body id="bg">
     <div class="page-wraper">
@@ -78,7 +172,9 @@
           <div class="account-container">
             <div class="heading-bx left">
               <h2 class="title-head">Ro'yhatdan o'tish</h2>
-              <p>Menda akkount bor<a href="login.html"> Akkountga kirish</a></p>
+              <p>
+                Menda akkount bor <a href="login.html"> Akkountga kirish</a>
+              </p>
             </div>
             <form class="contact-bx">
               <div class="row placeani">
@@ -144,23 +240,18 @@
                 <div class="col-lg-12">
                   <div class="form-group">
                     <div class="input-group">
-                      <label for=""
-                        >Davlat xususiy Sherikchlik (select option)</label
-                      >
-                      <input
-                        name="dzName"
-                        type="text"
-                        required=""
-                        class="form-control"
-                      />
-                      <!-- <select class="xususiySherik">
-                        <option></option>
-                        <option value="bino" class="sherikOption">Bino</option>
-                        <option value="fond" class="sherikOption">Fond</option>
-                        <option value="xizmat" class="sherikOption">
-                          Xizmat
-                        </option>
-                      </select> -->
+                      <span class="color-picker"></span>
+
+                      <span class="custom-dropdown big">
+                        <select>
+                          <option>Davlat xususiy Sherikchlik</option>
+                          <option>Yangi bino qurish</option>
+                          <option>Binoni tamirlash</option>
+                          <option>Fondni to'ldirish</option>
+                          <option>Internet</option>
+                          <option>Moddiy texnik ta'mirlash</option>
+                        </select>
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -168,13 +259,16 @@
                 <div class="col-lg-12">
                   <div class="form-group">
                     <div class="input-group">
-                      <label>Viloyat (select option)</label>
-                      <input
-                        name="dzName"
-                        type="text"
-                        required=""
-                        class="form-control"
-                      />
+                      <span class="custom-dropdown big">
+                        <select>
+                          <option>Viloyat</option>
+                          <option>Viloyat 1</option>
+                          <option>Viloyat 2</option>
+                          <option>Viloyat 3</option>
+                          <option>Viloyat 4</option>
+                          <option>Viloyat 5</option>
+                        </select>
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -182,13 +276,16 @@
                 <div class="col-lg-12">
                   <div class="form-group">
                     <div class="input-group">
-                      <label>Tuman (Select option)</label>
-                      <input
-                        name="dzName"
-                        type="text"
-                        required=""
-                        class="form-control"
-                      />
+                      <span class="custom-dropdown big">
+                        <select>
+                          <option>Tuman</option>
+                          <option>Tuman 1</option>
+                          <option>Tuman 2</option>
+                          <option>Tuman 3</option>
+                          <option>Tuman 4</option>
+                          <option>Tuman 5</option>
+                        </select>
+                      </span>
                     </div>
                   </div>
                 </div>
