@@ -146,87 +146,92 @@
     <div class="page-wraper">
       <div id="loading-icon-bx"></div>
       <!-- Header Top ==== -->
-      <header class="header rs-nav header-transparent">
-        <div class="top-bar">
-          <div class="container">
-            <div class="row d-flex justify-content-between">
-              <div class="topbar-left"></div>
-              <div class="topbar-right">
-                <ul>
-                  <li><a href="login.html">Tizimga kirish</a></li>
-                  <div class="dropdown">
-                    <button onclick="myFunction()" class="dropbtn">
-                      Ro'yhatdan o'tish
-                    </button>
-                    <div id="myDropdown" class="dropdown-content">
-                      <a href="register.html" target="_blank"
-                        >Kutubxona sifatida</a
-                      >
-                      <a href="registerTashkilot.html" target="_blank"
-                        >Xususiy sektor sifatida
-                      </a>
-                    </div>
-                  </div>
 
-                  <li><a href="#">Shahsiy kabinet</a></li>
-                </ul>
+
+       <header class="header rs-nav">
+		<div class="top-bar">
+			<div class="container">
+				<div class="row d-flex justify-content-between">
+          <div class="topbar-left"></div>
+          <div class="topbar-right">
+            <ul>
+              <li><a href="login.html">Tizimga kirish</a></li>
+              <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn" style="color: black;">
+                  Ro'yhatdan o'tish
+                </button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="register.html" target="_blank"
+                    >Kutubxona sifatida</a
+                  >
+                  <a href="registerTashkilot.html" target="_blank"
+                    >Xususiy sektor sifatida
+                  </a>
+                </div>
               </div>
-            </div>
+
+              <li><a href="#">Shahsiy kabinet</a></li>
+            </ul>
           </div>
         </div>
-        <div class="sticky-header navbar-expand-lg">
-          <div class="menu-bar clearfix">
-            <div class="container clearfix">
-              <!-- Header Logo ==== -->
-              <!-- ----------------------------Logo qo'yaman--------------------- -->
-              <div class="menu-logo"></div>
-              <!-- Mobile Nav Button ==== -->
-              <button
-                class="navbar-toggler collapsed menuicon justify-content-end"
-                type="button"
-                data-toggle="collapse"
-                data-target="#menuDropdown"
-                aria-controls="menuDropdown"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span></span>
-                <span></span>
-                <span></span>
-              </button>
+			</div>
+		</div>
+    <div class="sticky-header navbar-expand-lg">
+      <div class="menu-bar clearfix">
+        <div class="container clearfix">
+          <!-- Header Logo ==== -->
+          <!-- ----------------------------Logo qo'yaman--------------------- -->
+          <div class="menu-logo"></div>
+          <!-- Mobile Nav Button ==== -->
+          <button
+            class="navbar-toggler collapsed menuicon justify-content-end"
+            type="button"
+            data-toggle="collapse"
+            data-target="#menuDropdown"
+            aria-controls="menuDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
 
-              <div
-                class="menu-links navbar-collapse collapse justify-content-start"
-                id="menuDropdown"
-              >
-                <ul class="nav navbar-nav">
-                  <li>
-                    <a href="index.html">Asosiy sahifa <i class="fa"></i></a>
-                  </li>
-                  <li>
-                    <a href="#">Kutubxonalar <i class="fa"></i></a>
-                  </li>
+          <div
+            class="menu-links navbar-collapse collapse justify-content-start"
+            id="menuDropdown"
+          >
+            <ul class="nav navbar-nav">
+              <li>
+                <a href="index.html">Asosiy sahifa <i class="fa"></i></a>
+              </li>
+              <li>
+                <a href="#">Kutubxonalar <i class="fa"></i></a>
+              </li>
 
-                  <li class="nav-dashboard active yangiliklar">
-                    <a href="#">Yangiliklar<i class="fa"></i></a>
-                  </li>
+              <li class="nav-dashboard active yangiliklar">
+                <a href="#">Yangiliklar<i class="fa"></i></a>
+              </li>
 
-                  <li class="nav-dashboard contacts">
-                    <a href="bizBilanBog'lanish.html"
-                      >Biz bilan bog'lanish<i class="fa"></i
-                    ></a>
-                  </li>
+              <li class="nav-dashboard contacts">
+                <a href="bizBilanBog'lanish.html"
+                  >Biz bilan bog'lanish<i class="fa"></i
+                ></a>
+              </li>
 
-                  <li class="nav-dashboard">
-                    <a href="#">Admin Paneli<i class="fa"></i></a>
-                  </li>
-                </ul>
-              </div>
-              <!-- Navigation Menu END ==== -->
-            </div>
+              <li class="nav-dashboard">
+                <a href="admin/index.html">Admin Paneli<i class="fa"></i></a>
+              </li>
+            </ul>
           </div>
+          <!-- Navigation Menu END ==== -->
         </div>
-      </header>
+      </div>
+    </div>
+    </header>
+
+
+    
       <!-- Header Top END ==== -->
       <div class="page-content bg-white">
         <!-- inner page banner -->
@@ -245,7 +250,7 @@
           <div class="container">
             <div class="row">
               <div class="col-md-12 heading-bx left">
-                <h2 class="title-head">So'ngi <span>yangiliklar</span></h2>
+                <h2 class="title-head active">So'ngi <span>yangiliklar</span></h2>
                 <p>Axborot resurslarini takomillashtirishga oid yangiliklar</p>
               </div>
             </div>
