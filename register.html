@@ -1,383 +1,140 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <!-- META ============================================= -->
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="keywords" content="" />
-    <meta name="author" content="" />
-    <meta name="robots" content="" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- DESCRIPTION -->
-    <meta name="description" content="EduChamp : Education HTML Template" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap" rel="stylesheet">
 
-    <!-- OG -->
-    <meta property="og:title" content="EduChamp : Education HTML Template" />
-    <meta
-      property="og:description"
-      content="EduChamp : Education HTML Template"
-    />
-    <meta property="og:image" content="" />
-    <meta name="format-detection" content="telephone=no" />
-
-    <!-- FAVICONS ICON ============================================= -->
-
-    <!-- PAGE TITLE HERE ============================================= -->
-    <title>EduChamp : Education HTML Template</title>
-
-    <!-- MOBILE SPECIFIC ============================================= -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <!--[if lt IE 9]>
-      <script src="assets/js/html5shiv.min.js"></script>
-      <script src="assets/js/respond.min.js"></script>
-    <![endif]-->
-
-    <!-- All PLUGINS CSS ============================================= -->
-    <link rel="stylesheet" type="text/css" href="assets/css/assets.css" />
-
-    <!-- TYPOGRAPHY ============================================= -->
-    <link rel="stylesheet" type="text/css" href="assets/css/typography.css" />
-
-    <!-- SHORTCODES ============================================= -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="assets/css/shortcodes/shortcodes.css"
-    />
-
-    <!-- STYLESHEETS ============================================= -->
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-    <link
-      class="skin"
-      rel="stylesheet"
-      type="text/css"
-      href="assets/css/color/color-1.css"
-    />
-
-    <link rel="stylesheet" href="register.css" />
     <style>
-      .big {
-        font-size: 16px;
+      a:hover
+      {
+        background: rgb(245, 244, 244);
+        border-radius: 5px;
       }
-
-      /* Custom dropdown */
-      .custom-dropdown {
-        position: relative;
-        display: inline-block;
-        vertical-align: middle;
-        width: 100%;
-      }
-
-      .custom-dropdown select {
-        color: #000;
-        font-size: inherit;
-        padding: 0.5em;
-        padding-right: 2.5em;
-        border: 0;
-        margin: 0;
-        border-radius: 3px;
-        text-indent: 0.01px;
-        text-overflow: "";
-        -webkit-appearance: button; /* hide default arrow in chrome OSX */
-      }
-
-      .custom-dropdown::before,
-      .custom-dropdown::after {
-        content: "";
-        position: absolute;
-        pointer-events: none;
-      }
-
-      .custom-dropdown::after {
-        /*  Custom dropdown arrow */
-        content: "\25BC";
-        height: 1em;
-        font-size: 16px;
-        line-height: 1;
-        right: 1.2em;
-        top: 50%;
-        margin-top: -0.5em;
-      }
-
-      .custom-dropdown::before {
-        /*  Custom dropdown arrow cover */
-        width: 2em;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        border-radius: 0 3px 3px 0;
-      }
-
-      .custom-dropdown select[disabled] {
-        color: rgba(0, 0, 0);
-      }
-
-      .custom-dropdown select[disabled]::after {
-        color: rgba(0, 0, 0);
-      }
-
-      .custom-dropdown::before {
-        background-color: rgba(0, 0, 0);
-      }
-
-      .custom-dropdown::after {
-        color: rgba(0, 0, 0);
-      }
-
-      #big {
-        opacity: 0;
-        display: grid;
-        grid-template-columns: auto auto;
+      input::placeholder, option
+      {
+        color:rgb(165, 165, 165) ;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 80%;
       }
     </style>
-
-    <script>
-      var colors = [
-        "1abc9c",
-        "2c3e50",
-        "2980b9",
-        "7f8c8d",
-        "f1c40f",
-        "d35400",
-        "27ae60",
-      ];
-
-      colors.each(function (color) {
-        $$(".color-picker")[0].insert(
-          '<div class="square" style="background: #' + color + '"></div>'
-        );
-      });
-
-      $$(".color-picker")[0].on("click", ".square", function (event, square) {
-        background = square.getStyle("background");
-        $$(".custom-dropdown select").each(function (dropdown) {
-          dropdown.setStyle({ background: background });
-        });
-      });
-    </script>
+    <title>DSC</title>
   </head>
-  <body id="bg">
-    <div class="page-wraper">
-      <div id="loading-icon-bx"></div>
-      <div class="account-form">
-        <div
-          class="account-head"
-          style="
-            background-image: url(assets/images/banner/back1.jpg);
-            transform: scaleX(1.5);
-          "
-        ></div>
-        <div class="account-form-inner">
-          <div class="account-container">
-            <div class="heading-bx left">
-              <h2 class="title-head">Ro'yhatdan o'tish</h2>
-              <p>
-                Menda akkount bor <a href="login.html"> Akkountga kirish</a>
-              </p>
-            </div>
-            <form class="contact-bx">
-              <div class="row placeani">
-                <div class="col-lg-12">
-                  <div class="form-group">
-                    <div class="input-group">
-                      <label
-                        >Axborot-kutubxona markazlari nomi (to'liq
-                        yozilsin)</label
-                      >
-                      <input
-                        name="dzName"
-                        type="text"
-                        required=""
-                        class="form-control"
-                      />
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-lg-12">
-                  <div class="form-group">
-                    <div class="input-group">
-                      <label>Tashkil topgan yili</label>
-                      <input
-                        name="dzName"
-                        type="number"
-                        required=""
-                        class="form-control"
-                      />
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-lg-12">
-                  <div class="form-group">
-                    <div class="input-group">
-                      <label>Umumiy fondi</label>
-                      <input
-                        name="dzName"
-                        type="number"
-                        required=""
-                        class="form-control"
-                      />
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-lg-12">
-                  <div class="form-group">
-                    <div class="input-group">
-                      <label>Foydalanuvchilar soni</label>
-                      <input
-                        name="dzName"
-                        type="number"
-                        required=""
-                        class="form-control"
-                      />
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-lg-12">
-                  <div class="form-group">
-                    <div class="input-group">
-                      <span class="color-picker"></span>
-
-                      <span class="custom-dropdown big">
-                        <select>
-                          <option>Davlat xususiy Sherikchlik</option>
-                          <option>Yangi bino qurish</option>
-                          <option>Binoni tamirlash</option>
-                          <option>Fondni to'ldirish</option>
-                          <option>Internet</option>
-                          <option>Moddiy texnik ta'mirlash</option>
-                        </select>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-lg-12">
-                  <div class="form-group">
-                    <div class="input-group">
-                      <span class="custom-dropdown big">
-                        <select>
-                          <option value="">Viloyatni tanlang</option>
-
-                          <option value="andijon">Andijon viloyati</option>
-                          <option value="buxoro">Buxoro viloyati</option>
-                          <option value="fargona">Farg'ona viloyati</option>
-                          <option value="jizzax">Jizzax viloyati</option>
-                          <option value="qoraqolpogiston">
-                            Qoraqalpog'iston Respublikasi
-                          </option>
-                          <option value="qashqadaryo">
-                            Qashqadaryo viloyati
-                          </option>
-                          <option value="samarqand">Samarqand viloyati</option>
-                          <option value="surxondaryo">
-                            Surxondaryo viloyati
-                          </option>
-                          <option value="toshkent_viloyati">
-                            Toshkent viloyati
-                          </option>
-                          <option value="toshkent_shahri">
-                            Toshkent shahri
-                          </option>
-                          <option value="xorazm">Xorazm viloyati</option>
-                        </select>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-lg-12">
-                  <div class="form-group">
-                    <div class="input-group">
-                      <label>Foydalanuvchi nomi</label>
-                      <input
-                        name="dzName"
-                        type="text"
-                        required=""
-                        class="form-control"
-                      />
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-lg-12">
-                  <div class="form-group">
-                    <div class="input-group">
-                      <label>Foydalanuvchi paroli</label>
-                      <input
-                        name="dzName"
-                        type="email"
-                        required=""
-                        class="form-control"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-12">
-                  <div class="form-group">
-                    <div class="input-group">
-                      <label>Parolni takrorlang</label>
-                      <input
-                        name="dzEmail"
-                        type="password"
-                        class="form-control"
-                        required=""
-                      />
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-lg-12">
-                  <div class="form-group">
-                    <div class="input-group">
-                      <label>Rasm yuklash</label>
-                      <input
-                        name="d"
-                        type="file"
-                        accept="image/*"
-                        class="form-control"
-                        required=""
-                      />
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-lg-12 m-b30">
-                  <button
-                    name="submit"
-                    type="submit"
-                    value="Submit"
-                    class="btn button-md"
-                  >
-                    Ro'yhatdan o'tish
-                  </button>
-                </div>
+  <body style="background-image: url(assets/images/banner/back1.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; ">
+    <div style="width: 100vw; height: 105vh; top: -5%; position: absolute; background-color: rgb(30, 2, 153); opacity: 0.5;"></div>
+      <!--img class="img-responsive" src="bg.jpg" style="height: 100%; width: 100%;" /-->
+      
+        <!--div class="container" style="width: 100%; height: 100%; padding: 25%; ">
+            <div class="row">
+              <div class="col">
+                One of three columns
               </div>
-            </form>
+              <div class="col">
+                One of three columns
+              </div>
+            </div>
+          </div-->
+
+
+
+
+          <div class="container">
+            <div class="row justify-content-md-center" style="margin-top: 2%; margin-left:2%; width: 100%;">
+          <div class="col-sm-7 text-left" style="width: 100%; background:rgb(255, 255, 255);  border-radius: 5px;">
+            <b style="color: black; font-family: 'Montserrat', sans-serif; padding-left: 20px; padding-top: 20px; font-size: 150%; font-weight: 500;">Ro'yhatdan O'tish</b><br>
+
+            <form>
+                  <div class="form-group">
+                    <br>
+                    <label for="exampleFormControlInput1" style="color: black; font-family: 'Montserrat', sans-serif; font-size: 90%; font-weight: 500; margin-bottom: 0px;">Axborot-kutubxona markazlari nomi (to'liq yozilsin)</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1"  style="border-top-color: transparent; border-left-color: transparent; border-right-color: transparent; border-bottom-color: black;padding: 0px; padding-bottom: 1%;" required>
+                    <div class="row">
+                        <div class="col">
+                            <label for="exampleFormControlInput1" style="color: black; font-family: 'Montserrat', sans-serif; font-size: 90%; font-weight: 500; margin-bottom: 0px;  margin-top: 2%;">Tashkil topgan yili</label>
+                            <input type="number" class="form-control" id="exampleFormControlInput1"  style="border-top-color: transparent; border-left-color: transparent; border-right-color: transparent; border-bottom-color: black;padding: 0px; padding-bottom: 1%;" required>
+                        </div><div class="col">
+                          <label for="exampleFormControlInput1" style="color: black; font-family: 'Montserrat', sans-serif; font-size: 90%; font-weight: 500; margin-bottom: 0px;  margin-top: 2%;">Umumiy fondi</label>
+                          <input type="number" class="form-control" id="exampleFormControlInput1"  style="border-top-color: transparent; border-left-color: transparent; border-right-color: transparent; border-bottom-color: black;padding: 0px; padding-bottom: 1%;" required>
+                      </div>
+                        
+                      </div>
+                      <div class="row">
+                        <div class="col">
+                            <label for="exampleFormControlInput1" style="color: black; font-family: 'Montserrat', sans-serif; font-size: 90%; font-weight: 500; margin-bottom: 0px;  margin-top: 2%;">Foydalanuvchilar soni</label>
+                            <input type="number" class="form-control" id="exampleFormControlInput1"  style="border-top-color: transparent; border-left-color: transparent; border-right-color: transparent; border-bottom-color: black;padding: 0px; padding-bottom: 1%;" required>
+                        </div>  <div class="col">
+                          <label for="exampleFormControlInput1" style="color: black; font-family: 'Montserrat', sans-serif; font-size: 90%; font-weight: 500; margin-bottom: 0px;  margin-top: 2%;">Sherikchilik</label>
+                          <div class="dropdownS">
+                              <select style="border-top-color: transparent; border-left-color: transparent; border-right-color: transparent; border-bottom-color: black; padding: 0px; padding-bottom: 1%; color:rgb(165, 165, 165); font-family: 'Montserrat', sans-serif; font-size: 88%; width: 100%;">
+                                  <option value="volvo" style="font-size: 100%; font-family: 'Montserrat', sans-serif;">Davlat xususiy sherikchilik</option>
+                                  <option value="saab" style="font-size: 100%; font-family: 'Montserrat', sans-serif;">YAngi bino qurish</option>
+                                  <option value="opel" style="font-size: 100%; font-family: 'Montserrat', sans-serif;">Binoni tamirlash</option>
+                                  <option value="audi" style="font-size: 100%; font-family: 'Montserrat', sans-serif;">Fondni to'ldirish</option>
+                                  <option value="audi" style="font-size: 100%; font-family: 'Montserrat', sans-serif;">Internet</option>
+                                  <option value="audi" style="font-size: 100%; font-family: 'Montserrat', sans-serif;">Moddiy texnik tamirlash </option>
+
+                                </select>
+                            </div>
+                      </div>
+                        
+                      </div>
+                      <div class="col">
+                        <label for="exampleFormControlInput1" style="color: black; font-family: 'Montserrat', sans-serif; font-size: 90%; font-weight: 500; margin-bottom: 0px;  margin-top: 2%;">Hudud</label>
+                        <div class="dropdownS">
+                            <select style="border-top-color: transparent; border-left-color: transparent; border-right-color: transparent; border-bottom-color: black; padding: 0px; padding-bottom: 1%; color:rgb(165, 165, 165); font-family: 'Montserrat', sans-serif; font-size: 88%; width: 100%;">
+                                <option value="volvo" style="font-size: 100%; font-family: 'Montserrat', sans-serif;">Viloyatni tanlang</option>
+                                <option value="andijon" style="font-size: 100%; font-family: 'Montserrat', sans-serif;">Andijon viloyati</option>
+                                <option value="buxoro" style="font-size: 100%; font-family: 'Montserrat', sans-serif;">Buxoro viloyati</option>
+                                <option value="fargona" style="font-size: 100%; font-family: 'Montserrat', sans-serif;">Farg'ona viloyati</option>
+                                <option value="jizzax" style="font-size: 100%; font-family: 'Montserrat', sans-serif;">Jizzax viloyati</option>
+                                <option value="qoraqolpogiston" style="font-size: 100%; font-family: 'Montserrat', sans-serif;">Qoraqolpog'iston Respublikasi</option>
+                                <option value="qashqadaryo" style="font-size: 100%; font-family: 'Montserrat', sans-serif;">Qashqadaryo viloyati</option>
+
+                                <option value="samarqand" style="font-size: 100%; font-family: 'Montserrat', sans-serif;">Samarqand viloyati</option>
+                                <option value="surxondaryo" style="font-size: 100%; font-family: 'Montserrat', sans-serif;">Surxondaryo viloyati</option>
+                                <option value="toshkent_viloyati" style="font-size: 100%; font-family: 'Montserrat', sans-serif;">Toshkent viloyati</option>
+                                <option value="toshkent_shahri" style="font-size: 100%; font-family: 'Montserrat', sans-serif;">Toshkent shahri</option>
+                                <option value="xorazm" style="font-size: 100%; font-family: 'Montserrat', sans-serif;">Xorazm viloyati</option>
+                              </select>
+                          </div>
+                    </div>
+                    <label for="exampleFormControlInput1" style="color: black; font-family: 'Montserrat', sans-serif; font-size: 90%; font-weight: 500; margin-bottom: 0px;  margin-top: 2%;">Foydalanuvchi nomi</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1"  style="border-top-color: transparent; border-left-color: transparent; border-right-color: transparent; border-bottom-color: black;padding: 0px; padding-bottom: 1%;" required>
+                    <div class="row">
+                      <div class="col">
+                          <label for="exampleFormControlInput1" style="color: black; font-family: 'Montserrat', sans-serif; font-size: 90%; font-weight: 500; margin-bottom: 0px;  margin-top: 2%;">Foydalanuvchi paroli</label>
+                          <input type="password" class="form-control" id="exampleFormControlInput1"  style="border-top-color: transparent; border-left-color: transparent; border-right-color: transparent; border-bottom-color: black;padding: 0px; padding-bottom: 1%;" required>
+                      </div><div class="col">
+                        <label for="exampleFormControlInput1" style="color: black; font-family: 'Montserrat', sans-serif; font-size: 90%; font-weight: 500; margin-bottom: 0px;  margin-top: 2%;">Parolni takrorlang</label>
+                        <input type="password" class="form-control" id="exampleFormControlInput1"  style="border-top-color: transparent; border-left-color: transparent; border-right-color: transparent; border-bottom-color: black;padding: 0px; padding-bottom: 1%;" required>
+                    </div>
+                      
+                    </div>
+                    <div class="row">
+                        
+                      <div class="col">
+                        <label for="exampleFormControlInput1" style="color: black; font-family: 'Montserrat', sans-serif; font-size: 90%; font-weight: 500; margin-bottom: 0px;  margin-top: 2%;">Fayl yuklash</label>
+                        <input type="file" class="form-control" id="exampleFormControlInput1"  style="border-top-color: transparent; border-left-color: transparent; border-right-color: transparent; border-bottom-color: black;padding: 0px; padding-bottom: 1%; width: 105px;" required>
+                    </div>  
+                        </div>
+                        <br>
+                        
+                          <button type="submit" class="btn" style="margin-left: 40%;  background: orange; font-family: 'Montserrat', sans-serif; padding-top: 5px; margin-top: 1%; font-size: 100%;">Ro'yhatdan o'tish</button>
+                      </div>
+                  </div>
+
+                </form>
           </div>
         </div>
       </div>
-    </div>
-    <!-- External JavaScripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/vendors/bootstrap/js/popper.min.js"></script>
-    <script src="assets/vendors/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/vendors/bootstrap-select/bootstrap-select.min.js"></script>
-    <script src="assets/vendors/bootstrap-touchspin/jquery.bootstrap-touchspin.js"></script>
-    <script src="assets/vendors/magnific-popup/magnific-popup.js"></script>
-    <script src="assets/vendors/counter/waypoints-min.js"></script>
-    <script src="assets/vendors/counter/counterup.min.js"></script>
-    <script src="assets/vendors/imagesloaded/imagesloaded.js"></script>
-    <script src="assets/vendors/masonry/masonry.js"></script>
-    <script src="assets/vendors/masonry/filter.js"></script>
-    <script src="assets/vendors/owl-carousel/owl.carousel.js"></script>
-    <script src="assets/js/functions.js"></script>
-    <script src="assets/js/contact.js"></script>
-    <script src="assets/vendors/switcher/switcher.js"></script>
-    -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 </html>

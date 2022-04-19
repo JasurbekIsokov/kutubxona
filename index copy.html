@@ -24,7 +24,8 @@
     </style>
     <title>DSC</title>
   </head>
-  <body style="background-image: url(assets/images/banner/back1.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;">
+  <body style="background-image: url(assets/images/banner/back1.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; ">
+    <div style="width: 100vw; height: 105vh; top: -5%; position: absolute; background-color: rgb(30, 2, 153); opacity: 0.5;"></div>
       <!--img class="img-responsive" src="bg.jpg" style="height: 100%; width: 100%;" /-->
       
         <!--div class="container" style="width: 100%; height: 100%; padding: 25%; ">
@@ -42,9 +43,9 @@
 
 
           <div class="container">
-            <div class="row justify-content-md-center" style="margin-top: 14%; margin-left:2%; width: 100%;">
-          <div class="col-sm-7 text-left" style="width: 27%; background:rgb(255, 255, 255); border-top-right-radius: 10px; border-bottom-right-radius: 10px;">
-            <b style="color: black; font-family: 'Montserrat', sans-serif; padding-left: 20px; font-size: 150%; font-weight: 500;">Ro'yhatdan O'tish</b><br>
+            <div class="row justify-content-md-center" style="margin-top: 2%; margin-left:2%; width: 100%;">
+          <div class="col-sm-7 text-left" style="width: 100%; background:rgb(255, 255, 255);  border-radius: 5px;">
+            <b style="color: black; font-family: 'Montserrat', sans-serif; padding-left: 20px; padding-top: 20px; font-size: 150%; font-weight: 500;">Ro'yhatdan O'tish</b><br>
 
             <form>
                   <div class="form-group">
@@ -59,57 +60,70 @@
                           <label for="exampleFormControlInput1" style="color: black; font-family: 'Montserrat', sans-serif; font-size: 90%; font-weight: 500; margin-bottom: 0px;  margin-top: 2%;">Umumiy fondi</label>
                           <input type="number" class="form-control" id="exampleFormControlInput1"  style="border-top-color: transparent; border-left-color: transparent; border-right-color: transparent; border-bottom-color: black;padding: 0px; padding-bottom: 1%;" required>
                       </div>
+                        
+                      </div>
+                      <div class="row">
                         <div class="col">
                             <label for="exampleFormControlInput1" style="color: black; font-family: 'Montserrat', sans-serif; font-size: 90%; font-weight: 500; margin-bottom: 0px;  margin-top: 2%;">Foydalanuvchilar soni</label>
                             <input type="number" class="form-control" id="exampleFormControlInput1"  style="border-top-color: transparent; border-left-color: transparent; border-right-color: transparent; border-bottom-color: black;padding: 0px; padding-bottom: 1%;" required>
-                        </div>
+                        </div>  <div class="col">
+                          <label for="exampleFormControlInput1" style="color: black; font-family: 'Montserrat', sans-serif; font-size: 90%; font-weight: 500; margin-bottom: 0px;  margin-top: 2%;">Sherikchilik</label>
+                          <div class="dropdownS">
+                              <select style="border-top-color: transparent; border-left-color: transparent; border-right-color: transparent; border-bottom-color: black; padding: 0px; padding-bottom: 1%; color:rgb(165, 165, 165); font-family: 'Montserrat', sans-serif; font-size: 88%; width: 100%;">
+                                  <option value="volvo" style="font-size: 100%; font-family: 'Montserrat', sans-serif;">Davlat xususiy sherikchilik</option>
+                                  <option value="saab" style="font-size: 100%; font-family: 'Montserrat', sans-serif;">YAngi bino qurish</option>
+                                  <option value="opel" style="font-size: 100%; font-family: 'Montserrat', sans-serif;">Binoni tamirlash</option>
+                                  <option value="audi" style="font-size: 100%; font-family: 'Montserrat', sans-serif;">Fondni to'ldirish</option>
+                                  <option value="audi" style="font-size: 100%; font-family: 'Montserrat', sans-serif;">Internet</option>
+                                  <option value="audi" style="font-size: 100%; font-family: 'Montserrat', sans-serif;">Moddiy texnik tamirlash </option>
+
+                                </select>
+                            </div>
+                      </div>
+                        
                       </div>
                       <div class="col">
-                        <label for="exampleFormControlInput1" style="color: black; font-family: 'Montserrat', sans-serif; font-size: 90%; font-weight: 500; margin-bottom: 0px;  margin-top: 2%;">Year:</label>
+                        <label for="exampleFormControlInput1" style="color: black; font-family: 'Montserrat', sans-serif; font-size: 90%; font-weight: 500; margin-bottom: 0px;  margin-top: 2%;">Hudud</label>
                         <div class="dropdownS">
-                            <select style="border-top-color: transparent; border-left-color: transparent; border-right-color: transparent; border-bottom-color: black; padding: 0px; padding-bottom: 1%; color:rgb(165, 165, 165); font-family: 'Montserrat', sans-serif; font-size: 88%; width: 40%;">
-                                <option value="volvo" style="font-size: 100%; font-family: 'Montserrat', sans-serif;">1st Year</option>
-                                <option value="saab" style="font-size: 100%; font-family: 'Montserrat', sans-serif;">2nd Year</option>
-                                <option value="opel" style="font-size: 100%; font-family: 'Montserrat', sans-serif;">3rd Year</option>
-                                <option value="audi" style="font-size: 100%; font-family: 'Montserrat', sans-serif;">4th Year</option>
+                            <select style="border-top-color: transparent; border-left-color: transparent; border-right-color: transparent; border-bottom-color: black; padding: 0px; padding-bottom: 1%; color:rgb(165, 165, 165); font-family: 'Montserrat', sans-serif; font-size: 88%; width: 100%;">
+                                <option value="volvo" style="font-size: 100%; font-family: 'Montserrat', sans-serif;">Viloyatni tanlang</option>
+                                <option value="andijon" style="font-size: 100%; font-family: 'Montserrat', sans-serif;">Andijon viloyati</option>
+                                <option value="buxoro" style="font-size: 100%; font-family: 'Montserrat', sans-serif;">Buxoro viloyati</option>
+                                <option value="fargona" style="font-size: 100%; font-family: 'Montserrat', sans-serif;">Farg'ona viloyati</option>
+                                <option value="jizzax" style="font-size: 100%; font-family: 'Montserrat', sans-serif;">Jizzax viloyati</option>
+                                <option value="qoraqolpogiston" style="font-size: 100%; font-family: 'Montserrat', sans-serif;">Qoraqolpog'iston Respublikasi</option>
+                                <option value="qashqadaryo" style="font-size: 100%; font-family: 'Montserrat', sans-serif;">Qashqadaryo viloyati</option>
+
+                                <option value="samarqand" style="font-size: 100%; font-family: 'Montserrat', sans-serif;">Samarqand viloyati</option>
+                                <option value="surxondaryo" style="font-size: 100%; font-family: 'Montserrat', sans-serif;">Surxondaryo viloyati</option>
+                                <option value="toshkent_viloyati" style="font-size: 100%; font-family: 'Montserrat', sans-serif;">Toshkent viloyati</option>
+                                <option value="toshkent_shahri" style="font-size: 100%; font-family: 'Montserrat', sans-serif;">Toshkent shahri</option>
+                                <option value="xorazm" style="font-size: 100%; font-family: 'Montserrat', sans-serif;">Xorazm viloyati</option>
                               </select>
                           </div>
                     </div>
-                    <label for="exampleFormControlInput1" style="color: black; font-family: 'Montserrat', sans-serif; font-size: 90%; font-weight: 500; margin-bottom: 0px;  margin-top: 2%;">Github Link:</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="https://github.com/RitwickBhargav/" style="border-top-color: transparent; border-left-color: transparent; border-right-color: transparent; border-bottom-color: black;padding: 0px; padding-bottom: 1%;" required>
-                    <label for="exampleFormControlInput1" style="color: black; font-family: 'Montserrat', sans-serif; font-size: 90%; font-weight: 500; margin-bottom: 0px;  margin-top: 2%;">LinkedIn Link:</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="https://www.linkedin.com/in/ritwickbhargav80/" style="border-top-color: transparent; border-left-color: transparent; border-right-color: transparent; border-bottom-color: black;padding: 0px; padding-bottom: 1%;" required>
+                    <label for="exampleFormControlInput1" style="color: black; font-family: 'Montserrat', sans-serif; font-size: 90%; font-weight: 500; margin-bottom: 0px;  margin-top: 2%;">Foydalanuvchi nomi</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1"  style="border-top-color: transparent; border-left-color: transparent; border-right-color: transparent; border-bottom-color: black;padding: 0px; padding-bottom: 1%;" required>
                     <div class="row">
-                        <div class="col">
-                            <label for="exampleFormControlInput1" style="color: black; font-family: 'Montserrat', sans-serif; font-size: 90%; font-weight: 500; margin-bottom: 0px;  margin-top: 2%;">Year:</label>
-                            <div class="dropdownS">
-                                <select style="border-top-color: transparent; border-left-color: transparent; border-right-color: transparent; border-bottom-color: black; padding: 0px; padding-bottom: 1%; color:rgb(165, 165, 165); font-family: 'Montserrat', sans-serif; font-size: 88%; width: 40%;">
-                                    <option value="volvo" style="font-size: 100%; font-family: 'Montserrat', sans-serif;">1st Year</option>
-                                    <option value="saab" style="font-size: 100%; font-family: 'Montserrat', sans-serif;">2nd Year</option>
-                                    <option value="opel" style="font-size: 100%; font-family: 'Montserrat', sans-serif;">3rd Year</option>
-                                    <option value="audi" style="font-size: 100%; font-family: 'Montserrat', sans-serif;">4th Year</option>
-                                  </select>
-                              </div>
-                        </div>
-                        <div class="col">
-                            <label for="exampleFormControlInput1" style="color: black; font-family: 'Montserrat', sans-serif; font-size: 90%; font-weight: 500; margin-bottom: 0px;  margin-top: 2%;">Branch:</label>
-                            <div class="dropdown">
-                                <select style="border-top-color: transparent; border-left-color: transparent; border-right-color: transparent; border-bottom-color: black; padding: 0px; padding-bottom: 1%; color:rgb(165, 165, 165); font-family: 'Montserrat', sans-serif; font-size: 88%; width: 40%;">
-                                    <option value="volvo" style="font-size: 100%; font-family: 'Montserrat', sans-serif;">CSE</option>
-                                    <option value="saab" style="font-size: 100%; font-family: 'Montserrat', sans-serif;">CSI</option>
-                                    <option value="opel" style="font-size: 100%; font-family: 'Montserrat', sans-serif;">IT</option>
-                                    <option value="audi" style="font-size: 100%; font-family: 'Montserrat', sans-serif;">ECE</option>
-                                    <option value="audi" style="font-size: 100%; font-family: 'Montserrat', sans-serif;">EN</option>
-                                    <option value="audi" style="font-size: 100%; font-family: 'Montserrat', sans-serif;">EI</option>
-                                    <option value="audi" style="font-size: 100%; font-family: 'Montserrat', sans-serif;">CE</option>
-                                    <option value="audi" style="font-size: 100%; font-family: 'Montserrat', sans-serif;">ME</option>
-                                  </select>
-                              </div>
-                        </div>
+                      <div class="col">
+                          <label for="exampleFormControlInput1" style="color: black; font-family: 'Montserrat', sans-serif; font-size: 90%; font-weight: 500; margin-bottom: 0px;  margin-top: 2%;">Foydalanuvchi paroli</label>
+                          <input type="password" class="form-control" id="exampleFormControlInput1"  style="border-top-color: transparent; border-left-color: transparent; border-right-color: transparent; border-bottom-color: black;padding: 0px; padding-bottom: 1%;" required>
+                      </div><div class="col">
+                        <label for="exampleFormControlInput1" style="color: black; font-family: 'Montserrat', sans-serif; font-size: 90%; font-weight: 500; margin-bottom: 0px;  margin-top: 2%;">Parolni takrorlang</label>
+                        <input type="password" class="form-control" id="exampleFormControlInput1"  style="border-top-color: transparent; border-left-color: transparent; border-right-color: transparent; border-bottom-color: black;padding: 0px; padding-bottom: 1%;" required>
+                    </div>
+                      
+                    </div>
+                    <div class="row">
+                        
+                      <div class="col">
+                        <label for="exampleFormControlInput1" style="color: black; font-family: 'Montserrat', sans-serif; font-size: 90%; font-weight: 500; margin-bottom: 0px;  margin-top: 2%;">Fayl yuklash</label>
+                        <input type="file" class="form-control" id="exampleFormControlInput1"  style="border-top-color: transparent; border-left-color: transparent; border-right-color: transparent; border-bottom-color: black;padding: 0px; padding-bottom: 1%; width: 105px;" required>
+                    </div>  
                         </div>
                         <br>
                         
-                          <button type="submit" class="btn" style="margin-left: 40%;  background: #A7BFE8; font-family: 'Montserrat', sans-serif; padding-top: 5px; margin-top: 1%; font-size: 100%;">Submit</button>
+                          <button type="submit" class="btn" style="margin-left: 40%;  background: orange; font-family: 'Montserrat', sans-serif; padding-top: 5px; margin-top: 1%; font-size: 100%;">Ro'yhatdan o'tish</button>
                       </div>
                   </div>
 
